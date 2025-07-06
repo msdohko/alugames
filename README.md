@@ -1,91 +1,99 @@
-# AluGames
+# 🎮 AluGames
 
-AluGames é um projeto desenvolvido durante o curso da Alura, focado em praticar lógica de programação e manipulação de DOM com JavaScript. O projeto simula um sistema de aluguel de boardgames com interface interativa.
+Um sistema de aluguel de boardgames desenvolvido com HTML, CSS e JavaScript puro.
 
-## Sobre o Projeto
+## 📋 Descrição
 
-Este projeto foi criado como parte do curso da Alura para exercitar conceitos fundamentais de desenvolvimento web, incluindo:
-- Manipulação de elementos HTML via JavaScript
-- Estilização responsiva com CSS
-- Lógica de alternância de estados
-- Boas práticas de estruturação de código
+O AluGames é uma aplicação web que simula um sistema de aluguel de jogos de tabuleiro. A interface permite aos usuários visualizar os jogos disponíveis e alternar entre os estados "Alugar" e "Devolver" com um simples clique.
 
-## Descrição Detalhada
+## ✨ Funcionalidades
 
-O AluGames apresenta uma interface moderna e intuitiva para gerenciar o aluguel de jogos de tabuleiro. Cada jogo possui:
-- Imagem do jogo
-- Nome do jogo
-- Botão para alternar status (Alugar/Devolver)
+- **Dashboard de Jogos**: Exibe uma lista de boardgames disponíveis para aluguel
+- **Sistema de Status**: Permite alternar entre "Alugar" e "Devolver" cada jogo
+- **Interface Responsiva**: Design adaptável para diferentes tamanhos de tela
+- **Efeitos Visuais**: Overlay escuro sobre jogos alugados e botões dinâmicos
+- **Design Moderno**: Interface com gradiente e elementos visuais atrativos
 
-### Funcionalidades Implementadas
+## 🛠️ Tecnologias Utilizadas
 
-1. **Alternância de Status**: Ao clicar no botão de cada jogo, o status alterna entre "Alugar" e "Devolver"
-2. **Feedback Visual**: Quando um jogo está alugado, a imagem recebe um overlay escuro e o botão muda de cor
-3. **Interface Responsiva**: O layout se adapta a diferentes tamanhos de tela
-4. **Design Moderno**: Utiliza gradientes, sombras e efeitos visuais para uma experiência agradável
+- **HTML5**: Estrutura semântica da página
+- **CSS3**: Estilização com gradientes, flexbox e efeitos visuais
+- **JavaScript**: Funcionalidade de alternância de status dos jogos
+- **Fontes**: Chakra Petch e Inter (Google Fonts)
 
-### Estrutura do Código
+## 🚀 Como Executar
 
-#### HTML (`index.html`)
-- Estrutura semântica com `main`, `section` e `ul`
-- Organização clara dos elementos de interface
-- Integração com JavaScript através de eventos `onclick`
+1. Clone ou baixe o projeto
+2. Abra o arquivo `index.html` em seu navegador
+3. Interaja clicando nos botões "Alugar" ou "Devolver" para testar a funcionalidade
 
-#### CSS (`main.css`)
-- Reset CSS para consistência entre navegadores
-- Sistema de cores com gradientes e transparências
-- Layout flexível com Flexbox
-- Media queries para responsividade
-- Classes utilitárias para estados dos jogos
-
-#### JavaScript (`app.js`)
-- Função `alterarStatus(id)` para manipular o estado dos jogos
-- Seleção de elementos DOM
-- Adição/remoção de classes CSS
-- Alteração dinâmica do texto dos botões
-
-## Tecnologias Utilizadas
-
-- **HTML5**: Estrutura semântica e acessível
-- **CSS3**: Estilização moderna com Flexbox, gradientes e animações
-- **JavaScript**: Manipulação de DOM e lógica de interação
-- **Fontes**: Google Fonts (Chakra Petch e Inter)
-
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
 alugames/
 ├── css/
-│   ├── _reset.css          # Reset de estilos
-│   └── main.css           # Estilos principais
+│   ├── _reset.css
+│   └── main.css
 ├── img/
-│   ├── logo.svg           # Logo do projeto
-│   ├── fade_bar.svg       # Elemento visual
-│   ├── hachuras.svg       # Elemento visual
-│   ├── monopoly.png       # Imagem do jogo
-│   ├── takenoko.png       # Imagem do jogo
-│   └── ticket_to_ride.png # Imagem do jogo
+│   ├── fade_bar.svg
+│   ├── hachuras.svg
+│   ├── logo.svg
+│   ├── monopoly.png
+│   ├── takenoko.png
+│   └── ticket_to_ride.png
 ├── js/
-│   └── app.js            # Lógica JavaScript
-├── index.html            # Página principal
-└── README.md            # Documentação
+│   └── app.js
+├── index.html
+└── README.md
 ```
 
-## Como Executar
+## 🎯 Melhorias Futuras
 
-1. Clone ou baixe este repositório
-2. Abra o arquivo `index.html` em seu navegador preferido
-3. Interaja com os botões para testar a funcionalidade de aluguel
+### Funcionalidades
+- [ ] **Sistema de Autenticação**: Login e cadastro de usuários
+- [ ] **Perfil de Usuário**: Histórico de aluguéis e preferências
+- [ ] **Sistema de Avaliações**: Comentários e notas para os jogos
+- [ ] **Filtros e Busca**: Pesquisar jogos por categoria, preço ou disponibilidade
+- [ ] **Sistema de Pagamento**: Integração com gateways de pagamento
+- [ ] **Notificações**: Alertas sobre prazos de devolução
+- [ ] **Sistema de Reservas**: Agendar aluguéis futuros
 
-## Aprendizados do Curso
+### Interface e UX
+- [ ] **Modo Escuro/Claro**: Toggle entre temas
+- [ ] **Animações**: Transições suaves entre estados
+- [ ] **Loading States**: Indicadores de carregamento
+- [ ] **Tooltips**: Informações detalhadas sobre os jogos
+- [ ] **Responsividade Aprimorada**: Melhor adaptação para dispositivos móveis
 
-Este projeto demonstra conceitos importantes aprendidos no curso da Alura:
-- **Manipulação de DOM**: Como selecionar e modificar elementos HTML
-- **Eventos JavaScript**: Responder a interações do usuário
-- **CSS Classes**: Usar classes para aplicar estilos condicionalmente
-- **Responsividade**: Adaptar o layout para diferentes dispositivos
-- **Organização de Código**: Estruturar arquivos e pastas de forma lógica
+### Backend e Dados
+- [ ] **API REST**: Backend para gerenciar dados
+- [ ] **Banco de Dados**: Armazenamento persistente de informações
+- [ ] **Sistema de Categorias**: Organização por tipo de jogo
+- [ ] **Gestão de Estoque**: Controle de quantidade disponível
+- [ ] **Relatórios**: Estatísticas de aluguéis e popularidade
 
-## Créditos
+### Tecnologias
+- [ ] **Framework Frontend**: React, Vue.js ou Angular
+- [ ] **Backend**: Node.js, Python (Django/Flask) ou PHP
+- [ ] **Banco de Dados**: PostgreSQL, MongoDB ou MySQL
+- [ ] **Deploy**: Vercel, Netlify ou AWS
+- [ ] **CI/CD**: Pipeline de integração contínua
 
-Projeto desenvolvido durante o curso da Alura, focado em práticas de lógica de programação e desenvolvimento web front-end. 
+### Segurança e Performance
+- [ ] **Validação de Dados**: Verificação de entrada do usuário
+- [ ] **HTTPS**: Certificado SSL para produção
+- [ ] **Otimização**: Lazy loading de imagens e compressão
+- [ ] **SEO**: Meta tags e estrutura semântica aprimorada
+- [ ] **Acessibilidade**: Suporte a leitores de tela e navegação por teclado
+
+## 👨‍💻 Desenvolvimento
+
+Este projeto foi desenvolvido como parte de um exercício prático de lógica de programação, demonstrando conceitos básicos de manipulação do DOM e interação com JavaScript.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e distribuir conforme necessário.
+
+---
+
+**Desenvolvido com ❤️ para a comunidade de boardgames** 
