@@ -1,37 +1,91 @@
 # AluGames
 
-AluGames é um projeto simples de front-end para o aluguel de boardgames, desenvolvido como exercício de lógica e manipulação de DOM com JavaScript, HTML e CSS. Este projeto foi criado para o curso da **Alura**.
+AluGames é um projeto desenvolvido durante o curso da Alura, focado em praticar lógica de programação e manipulação de DOM com JavaScript. O projeto simula um sistema de aluguel de boardgames com interface interativa.
 
-## Descrição
+## Sobre o Projeto
 
-O objetivo do AluGames é simular um painel de aluguel de jogos de tabuleiro, onde o usuário pode alternar o status de cada jogo entre "Alugar" e "Devolver". O layout é responsivo e utiliza estilos modernos para uma melhor experiência visual.
+Este projeto foi criado como parte do curso da Alura para exercitar conceitos fundamentais de desenvolvimento web, incluindo:
+- Manipulação de elementos HTML via JavaScript
+- Estilização responsiva com CSS
+- Lógica de alternância de estados
+- Boas práticas de estruturação de código
 
-## Funcionalidades
-- Visualização de jogos disponíveis para aluguel.
-- Alternância do status de cada jogo (alugado ou disponível) ao clicar no botão correspondente.
-- Interface visualmente agradável e responsiva.
+## Descrição Detalhada
+
+O AluGames apresenta uma interface moderna e intuitiva para gerenciar o aluguel de jogos de tabuleiro. Cada jogo possui:
+- Imagem do jogo
+- Nome do jogo
+- Botão para alternar status (Alugar/Devolver)
+
+### Funcionalidades Implementadas
+
+1. **Alternância de Status**: Ao clicar no botão de cada jogo, o status alterna entre "Alugar" e "Devolver"
+2. **Feedback Visual**: Quando um jogo está alugado, a imagem recebe um overlay escuro e o botão muda de cor
+3. **Interface Responsiva**: O layout se adapta a diferentes tamanhos de tela
+4. **Design Moderno**: Utiliza gradientes, sombras e efeitos visuais para uma experiência agradável
+
+### Estrutura do Código
+
+#### HTML (`index.html`)
+- Estrutura semântica com `main`, `section` e `ul`
+- Organização clara dos elementos de interface
+- Integração com JavaScript através de eventos `onclick`
+
+#### CSS (`main.css`)
+- Reset CSS para consistência entre navegadores
+- Sistema de cores com gradientes e transparências
+- Layout flexível com Flexbox
+- Media queries para responsividade
+- Classes utilitárias para estados dos jogos
+
+#### JavaScript (`app.js`)
+- Função `alterarStatus(id)` para manipular o estado dos jogos
+- Seleção de elementos DOM
+- Adição/remoção de classes CSS
+- Alteração dinâmica do texto dos botões
 
 ## Tecnologias Utilizadas
-- HTML5
-- CSS3 (com uso de Flexbox e variáveis)
-- JavaScript (manipulação de DOM)
+
+- **HTML5**: Estrutura semântica e acessível
+- **CSS3**: Estilização moderna com Flexbox, gradientes e animações
+- **JavaScript**: Manipulação de DOM e lógica de interação
+- **Fontes**: Google Fonts (Chakra Petch e Inter)
 
 ## Estrutura do Projeto
+
 ```
-css/
-  |_ _reset.css
-  |_ main.css
-img/
-  |_ (imagens dos jogos e elementos visuais)
-js/
-  |_ app.js
-index.html
+alugames/
+├── css/
+│   ├── _reset.css          # Reset de estilos
+│   └── main.css           # Estilos principais
+├── img/
+│   ├── logo.svg           # Logo do projeto
+│   ├── fade_bar.svg       # Elemento visual
+│   ├── hachuras.svg       # Elemento visual
+│   ├── monopoly.png       # Imagem do jogo
+│   ├── takenoko.png       # Imagem do jogo
+│   └── ticket_to_ride.png # Imagem do jogo
+├── js/
+│   └── app.js            # Lógica JavaScript
+├── index.html            # Página principal
+└── README.md            # Documentação
 ```
 
 ## Como Executar
-1. Clone ou baixe este repositório.
-2. Abra o arquivo `index.html` em seu navegador preferido.
-3. Interaja com os botões "Alugar" e "Devolver" para alternar o status dos jogos.
+
+1. Clone ou baixe este repositório
+2. Abra o arquivo `index.html` em seu navegador preferido
+3. Interaja com os botões para testar a funcionalidade de aluguel
+
+## Aprendizados do Curso
+
+Este projeto demonstra conceitos importantes aprendidos no curso da Alura:
+- **Manipulação de DOM**: Como selecionar e modificar elementos HTML
+- **Eventos JavaScript**: Responder a interações do usuário
+- **CSS Classes**: Usar classes para aplicar estilos condicionalmente
+- **Responsividade**: Adaptar o layout para diferentes dispositivos
+- **Organização de Código**: Estruturar arquivos e pastas de forma lógica
 
 ## Créditos
-Projeto desenvolvido para fins educacionais, praticando lógica de programação e manipulação de elementos na web, como parte do curso da **Alura**. 
+
+Projeto desenvolvido durante o curso da Alura, focado em práticas de lógica de programação e desenvolvimento web front-end. 
